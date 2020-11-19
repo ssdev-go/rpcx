@@ -1,4 +1,4 @@
-module github.com/smallnest/rpcx
+module github.com/smallnest/rpcx/v5
 
 go 1.14
 
@@ -49,6 +49,7 @@ require (
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/smallnest/libkv-etcdv3-store v1.1.9
 	github.com/smallnest/quick v0.0.0-20200501131359-9534f3d77602
+	github.com/smallnest/rpcx v0.0.0-20201112102542-4308d27f440e
 	github.com/smallnest/valkeyrie v0.0.0-20200811110245-15a06a9896aa
 	github.com/soheilhy/cmux v0.1.4
 	github.com/spf13/cobra v1.0.0 // indirect
