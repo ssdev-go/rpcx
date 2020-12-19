@@ -9,11 +9,12 @@ import (
 	"strings"
 	"sync"
 	"time"
+
 	metrics "github.com/rcrowley/go-metrics"
 	"github.com/rpcxio/libkv"
 	"github.com/rpcxio/libkv/store"
 	"github.com/rpcxio/libkv/store/etcd"
-	"github.com/smallnest/rpcx/log"
+	"github.com/smallnest/rpcx/v6/log"
 )
 
 func init() {

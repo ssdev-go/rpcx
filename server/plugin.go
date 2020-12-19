@@ -4,8 +4,8 @@ import (
 	"context"
 	"net"
 
-	"github.com/smallnest/rpcx/errors"
-	"github.com/smallnest/rpcx/protocol"
+	"github.com/smallnest/rpcx/v6/errors"
+	"github.com/smallnest/rpcx/v6/protocol"
 )
 
 //PluginContainer represents a plugin container that defines all methods to manage plugins.
@@ -39,7 +39,7 @@ type PluginContainer interface {
 }
 
 // Plugin is the server plugin interface.
-type Plugin interface {}
+type Plugin interface{}
 
 type (
 	// RegisterPlugin is .

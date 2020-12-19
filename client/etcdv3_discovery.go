@@ -8,7 +8,7 @@ import (
 	"github.com/rpcxio/libkv"
 	"github.com/rpcxio/libkv/store"
 	etcd "github.com/rpcxio/libkv/store/etcdv3"
-	"github.com/smallnest/rpcx/log"
+	"github.com/smallnest/rpcx/v6/log"
 )
 
 func init() {
