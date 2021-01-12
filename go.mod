@@ -1,4 +1,4 @@
-module github.com/smallnest/rpcx
+module github.com/smallnest/rpcx/v6
 
 go 1.15
 
@@ -28,7 +28,6 @@ require (
 	github.com/lucas-clemente/quic-go v0.18.0
 	github.com/nacos-group/nacos-sdk-go v1.0.1
 	github.com/opentracing/opentracing-go v1.1.1-0.20190913142402-a7454ce5950e
-	github.com/peterbourgon/g2s v0.0.0-20140925154142-ec76db4c1ac1 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20200313005456-10cdbea86bc0
 	github.com/rpcxio/libkv v0.5.0
 	github.com/rs/cors v1.7.0
