@@ -6,7 +6,7 @@ package serverplugin
 // 	"reflect"
 // 	"runtime"
 
-// 	"github.com/smallnest/rpcx/protocol"
+// 	"github.com/ssdev-go/rpcx/protocol"
 // 	"golang.org/x/net/trace"
 // )
 

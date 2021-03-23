@@ -7,10 +7,10 @@ import (
 	"net"
 	"sync"
 
-	"github.com/smallnest/rpcx/share"
+	"github.com/ssdev-go/rpcx/share"
 
 	multierror "github.com/hashicorp/go-multierror"
-	"github.com/smallnest/rpcx/protocol"
+	"github.com/ssdev-go/rpcx/protocol"
 )
 
 // OneClient wraps servicesPath and XClients.

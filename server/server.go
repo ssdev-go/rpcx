@@ -22,9 +22,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/smallnest/rpcx/log"
-	"github.com/smallnest/rpcx/protocol"
-	"github.com/smallnest/rpcx/share"
+	"github.com/ssdev-go/rpcx/log"
+	"github.com/ssdev-go/rpcx/protocol"
+	"github.com/ssdev-go/rpcx/share"
 )
 
 // ErrServerClosed is returned by the Server's Serve, ListenAndServe after a call to Shutdown or Close.

@@ -1,8 +1,8 @@
 package share
 
 import (
-	"github.com/smallnest/rpcx/codec"
-	"github.com/smallnest/rpcx/protocol"
+	"github.com/ssdev-go/rpcx/codec"
+	"github.com/ssdev-go/rpcx/protocol"
 )
 
 const (
@@ -49,6 +49,7 @@ var Codecs = map[protocol.SerializeType]codec.Codec{
 	protocol.ProtoBuffer:   &codec.PBCodec{},
 	protocol.MsgPack:       &codec.MsgpackCodec{},
 	protocol.Thrift:        &codec.ThriftCodec{},
+	protocol.Hession:       &codec.HessianCodec{},
 }
 
 // RegisterCodec register customized codec.

@@ -2,7 +2,7 @@
 
 Official site: [http://rpcx.io](http://rpcx.io/)
 
-[![License](https://img.shields.io/:license-apache%202-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GoDoc](https://godoc.org/github.com/smallnest/rpcx?status.png)](http://godoc.org/github.com/smallnest/rpcx)  [![travis](https://travis-ci.org/smallnest/rpcx.svg?branch=master)](https://travis-ci.org/smallnest/rpcx) [![Go Report Card](https://goreportcard.com/badge/github.com/smallnest/rpcx)](https://goreportcard.com/report/github.com/smallnest/rpcx) [![coveralls](https://coveralls.io/repos/smallnest/rpcx/badge.svg?branch=master&service=github)](https://coveralls.io/github/smallnest/rpcx?branch=master) [![QQ2群](https://img.shields.io/:QQ2群-670248151-blue.svg)](_documents/rpcx_dev_qq2.png) [![QQ群(已满)](https://img.shields.io/:QQ群(已满)-398044387-blue.svg)](_documents/rpcx_dev_qq.png) 
+[![License](https://img.shields.io/:license-apache%202-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GoDoc](https://godoc.org/github.com/ssdev-go/rpcx?status.png)](http://godoc.org/github.com/ssdev-go/rpcx)  [![travis](https://travis-ci.org/smallnest/rpcx.svg?branch=master)](https://travis-ci.org/smallnest/rpcx) [![Go Report Card](https://goreportcard.com/badge/github.com/ssdev-go/rpcx)](https://goreportcard.com/report/github.com/ssdev-go/rpcx) [![coveralls](https://coveralls.io/repos/smallnest/rpcx/badge.svg?branch=master&service=github)](https://coveralls.io/github/smallnest/rpcx?branch=master) [![QQ2群](https://img.shields.io/:QQ2群-670248151-blue.svg)](_documents/rpcx_dev_qq2.png) [![QQ群(已满)](https://img.shields.io/:QQ群(已满)-398044387-blue.svg)](_documents/rpcx_dev_qq.png) 
 
 
 **Notice: etcd**
@@ -11,9 +11,9 @@ Official site: [http://rpcx.io](http://rpcx.io/)
 
 ## Announce
 
-A tcpdump-like tool added: [rpcxdump](https://github.com/smallnest/rpcxdump)。 You can use it to debug communications between rpcx services and clients.
+A tcpdump-like tool added: [rpcxdump](https://github.com/ssdev-go/rpcxdump)。 You can use it to debug communications between rpcx services and clients.
 
-![](https://github.com/smallnest/rpcxdump/blob/master/snapshoot.png)
+![](https://github.com/ssdev-go/rpcxdump/blob/master/snapshoot.png)
 
 
 ## Cross-Languages
@@ -21,7 +21,7 @@ you can use other programming languages besides Go to access rpcx services.
 
 - **rpcx-gateway**: You can write clients in any programming languages to call rpcx services via [rpcx-gateway](https://github.com/rpcxio/rpcx-gateway)
 - **http invoke**: you can use the same http requests to access rpcx gateway
-- **Java Services/Clients**: You can use [rpcx-java](https://github.com/smallnest/rpcx-java) to implement/access rpcx servies via raw protocol.
+- **Java Services/Clients**: You can use [rpcx-java](https://github.com/ssdev-go/rpcx-java) to implement/access rpcx servies via raw protocol.
 
 
 > If you can write Go methods, you can also write rpc services. It is so easy to write rpc applications with rpcx.
@@ -30,13 +30,13 @@ you can use other programming languages besides Go to access rpcx services.
 
 install the basic features:
 
-`go get -v github.com/smallnest/rpcx/...`
+`go get -v github.com/ssdev-go/rpcx/...`
 
 
 If you want to use `quic`、`kcp` registry, use those tags to `go get` 、 `go build` or `go run`. For example, if you want to use all features, you can:
 
 ```sh
-go get -v -tags "quic kcp" github.com/smallnest/rpcx/...
+go get -v -tags "quic kcp" github.com/ssdev-go/rpcx/...
 ```
 
 **_tags_**:
@@ -86,7 +86,7 @@ It contains below features
 
 rpcx uses a binary protocol and platform-independent, which means you can develop services in other languages such as Java, python, nodejs, and you can use other prorgramming languages to invoke services developed in Go.
 
-There is a UI manager: [rpcx-ui](https://github.com/smallnest/rpcx-ui).
+There is a UI manager: [rpcx-ui](https://github.com/ssdev-go/rpcx-ui).
 
 ## Performance
 
@@ -162,7 +162,7 @@ The below is a simple example.
 
 ## Contribute
 
-see [contributors](https://github.com/smallnest/rpcx/graphs/contributors).
+see [contributors](https://github.com/ssdev-go/rpcx/graphs/contributors).
 
 Welcome to contribute:
 - submit issues or requirements

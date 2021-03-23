@@ -6,12 +6,12 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"reflect"
-
+	hessian "github.com/apache/dubbo-go-hessian2"
 	"github.com/apache/thrift/lib/go/thrift"
 	proto "github.com/gogo/protobuf/proto"
 	"github.com/vmihailenco/msgpack/v5"
 	pb "google.golang.org/protobuf/proto"
+	"reflect"
 )
 
 // Codec defines the interface that decode/encode payload.
@@ -130,4 +130,25 @@ func (c ThriftCodec) Decode(data []byte, i interface{}) error {
 	}
 	d.Transport.Close()
 	return d.Read(context.Background(), i.(thrift.TStruct), data)
+}
+
+type HessianCodec struct{}
+
+func (c HessianCodec) Encode(data interface{}) ([]byte, error) {
+	encoder := hessian.NewEncoder()
+	err := encoder.Encode(data)
+	if err != nil {
+		return nil, err
+	}
+	bytes := encoder.Buffer()
+	return bytes, nil
+}
+
+func (c HessianCodec) Decode(data []byte, msg interface{}) error {
+	decoder := hessian.NewDecoder(data)
+	msg, err := decoder.Decode()
+	if err != nil {
+		return err
+	}
+	return nil
 }

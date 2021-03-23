@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/smallnest/rpcx/util"
+	"github.com/ssdev-go/rpcx/util"
 )
 
 var (
@@ -93,6 +93,8 @@ const (
 	// Thrift
 	// Thrift for payload
 	Thrift
+
+	Hession
 )
 
 // Message is the generic type of Request and Response.

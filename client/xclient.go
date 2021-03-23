@@ -15,10 +15,10 @@ import (
 	"time"
 
 	"github.com/juju/ratelimit"
-	ex "github.com/smallnest/rpcx/errors"
-	"github.com/smallnest/rpcx/log"
-	"github.com/smallnest/rpcx/protocol"
-	"github.com/smallnest/rpcx/share"
+	ex "github.com/ssdev-go/rpcx/errors"
+	"github.com/ssdev-go/rpcx/log"
+	"github.com/ssdev-go/rpcx/protocol"
+	"github.com/ssdev-go/rpcx/share"
 	"golang.org/x/sync/singleflight"
 )
 
