@@ -107,6 +107,10 @@ type Message struct {
 	data          []byte
 }
 
+func (Message) JavaClassName() string {
+	return "netty.protocol.Massage"
+}
+
 // NewMessage creates an empty message.
 func NewMessage() *Message {
 	header := Header([12]byte{})
